@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/room.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +59,7 @@
         <section id="questions">
           <h2 class="sr-only">Perguntas</h2>
           <div class="questions">
-            <div class="question-wrapper">
+            <div class="question-wrapper read">
               <div class="question-content">
                 <div class="user">
                   <img src="./assets/avatar.svg" alt="" />
@@ -68,10 +69,7 @@
                 </div>
               </div>
               <div class="actions">
-                <a href="#">
-                  <img src="./assets/check.svg" class="check" alt="" />
-                  Marcar como lida</a
-                >
+               
                 <a href="#">
                   <img src="./assets/trash.svg" class="delete" alt="" />
                   Excluir
@@ -104,7 +102,27 @@
                   <img src="./assets/avatar.svg" alt="" />
                 </div>
                 <div class="question">
-                  <p>Oque é typescript? 🤔</p>
+                  <p>O que é o typescript? 🤔</p>
+                </div>
+              </div>
+              <div class="actions">
+                <a href="#">
+                  <img src="./assets/check.svg" class="check" alt="" />
+                  Marcar como lida</a
+                >
+                <a href="#">
+                  <img src="./assets/trash.svg" class="delete" alt="" />
+                  Excluir
+                </a>
+              </div>
+            </div>
+                <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="./assets/avatar.svg" alt="" />
+                </div>
+                <div class="question">
+                  <p>O que é o typescript? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore excepturi mollitia harum reiciendis labore veritatis cumque a itaque eligendi debitis voluptatem sed minus aspernatur reprehenderit, quis, suscipit totam ratione ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum suscipit, temporibus necessitatibus consequuntur eligendi cumque iusto. Accusantium nostrum doloremque cupiditate cumque, sunt impedit pariatur blanditiis eum totam distinctio praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptatum inventore debitis temporibus illo facere earum mollitia reprehenderit, similique aliquam sunt exercitationem eaque dolorum! Ex qui ad soluta error. 🤔</p>
                 </div>
               </div>
               <div class="actions">
@@ -121,6 +139,23 @@
           </div>
         </section>
       </main>
+      
+    </div>
+    <!-- MODA -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h2>Excluir</h2>
+        <p>Tem certeza que você deseja excluir essa pergunta ?</p>
+        <form action="#">
+          <label class="sr-only" for-id="password"> Digite sua senha</label>
+          <input type="password" id="password" name="password" 
+          placeholder="Digite a senha">
+          <div class="buttons">
+            <div class="button grey">Cancelar</div>
+            <button class="red">Sim, excluir</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

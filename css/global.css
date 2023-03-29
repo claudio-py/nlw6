@@ -1,4 +1,6 @@
 * {
+   
+   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,12 +26,16 @@ html {
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
   --grey-light: #e5eaf1;
+  --grey-medium:#eaecf2 ;
 }
 
 body {
+   
+   
   display: flex;
   background: var(--background);
   height: 100vh;
+  
 }
 
 body,
@@ -38,10 +44,14 @@ input,
 textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
   font-family: "Open Sans", sans-serif;
+  
 }
 .content {
   width: 100%;
   margin: 0 auto;
+   
+   
+   
 }
 .sr-only {
   position: absolute;
@@ -93,13 +103,33 @@ button.outline,
 button {
   outline: 1px solid var(--background);
 }
+button.red,
+.button.red{
+background: var(--red);
+color: var(--white);
+}
+
+button.grey,
+.button.grey{
+background: var(--grey-light);
+color: var(--grey-dark);
+}
 header {
   margin-top: 3.5rem;
   position: relative;
   z-index: -1;
+  
 }
 #logo {
   position: absolute;
   left: 16rem;
   top: 3.5rem;
+   
 }
+
+
+
+
+
+
+/* teste */
